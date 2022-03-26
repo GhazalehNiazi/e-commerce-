@@ -2,7 +2,8 @@ import React from "react";
 
 function SignInForm(props) {
   return (
-    <React.Fragment>
+    <div>
+
       <div>Log in</div>
       <form className="sign" onSubmit={props.onChangeMethod} >
         <label>Email</label>
@@ -28,7 +29,7 @@ function SignInForm(props) {
           Sign up
         </a>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

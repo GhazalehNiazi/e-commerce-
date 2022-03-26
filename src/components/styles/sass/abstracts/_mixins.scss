@@ -4,3 +4,8 @@
   justify-content: $justify;
   align-content: $align;
 }
+@mixin mq($width){
+  @media (min-width:$width) {
+    @content
+  }
+}
