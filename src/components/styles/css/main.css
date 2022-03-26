@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+input, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem 1rem;
+}
+
+.imageContainer {
+  width: 90vw;
+  align-self: center;
+  display: none;
+}
+.imageContainer img {
+  width: 100%;
+}
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1.2rem;
+}
+.sign input {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+  padding: 0.3rem;
+}
+.sign input::placeholder {
+  color: #b1b1b1;
+}
+
+.alert {
+  border: 2px solid #d11515;
+}
+
+.checkbox {
+  border: 2px solid #2c2c2c;
+  border-radius: 0;
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: baseline;
+}
+.terms label {
+  font-size: 0.9rem;
+}
+.terms label span {
+  color: #0084FF;
+  font-weight: 600;
+}
+
+.changeMethod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.login {
+  color: #0084FF;
+  font-weight: 600;
+}
+
+.button {
+  background-color: #0084FF;
+  padding: 0.5rem;
+  border: none;
+  margin: 1rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */
