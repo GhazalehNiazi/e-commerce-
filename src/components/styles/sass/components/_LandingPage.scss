@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.landingpage {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  justify-items: center;
+  justify-items: stretch;
+}
+
+.landingpage-sidebar {
+  height: 100vh;
+}
+.landingpage-main {
+  border: 2px solid green;
+}
+.landingpage-cart {
+  border: 2px solid blue;
+}

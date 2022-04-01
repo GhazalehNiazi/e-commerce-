@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+.header {
+  @include flex(column, center, center);
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.header-row--one {
+  @include flex(row, space-between, center);
+  padding-bottom: 1rem;
+  & ul {
+    @include flex(row, space-between, center);
+
+    & li {
+      padding-right: 1rem;
+      color: white;
+    }
+  }
+  
+  & h3 {
+    color: white;
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.header-row--two {
+  width: 100vw;
+  @include flex(row, center, center);
+  // justify-content: center;
+  // margin: auto;
+  & ul {
+    @include flex(row, space-between, center);
+    
+    & li {
+      margin-right: 1rem;
+      color: white;
+    //   font-size: rem;
+    }
+  }
+}

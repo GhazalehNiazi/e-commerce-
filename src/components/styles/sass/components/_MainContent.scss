@@ -1,0 +1,94 @@
+@use "../abstracts" as *;
+.maincontent {
+    padding: 2rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: rgb(254, 240, 240);
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    background: linear-gradient(0deg, #fde8ea 0%, #fef8fc 66%, #fef8fc 100%);
+    -webkit-box-shadow: -2px 1px 23px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 1px 23px 8px rgba(0, 0, 0, 0.1);
+  }
+  .maincontent-title {
+    line-height: 1.2;
+    & h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    & h5 {
+      color: rgb(121, 121, 121);
+    }
+  }
+  .maincontent-images {
+    width: fit-content;
+    padding: 0 9rem;
+    display: grid;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img1  img2 img3"
+      "img1 img4 img5";
+  
+    & img {
+      height: 7rem;
+      object-fit: fill;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+    }
+  }
+  .maincontent-images__img2 {
+    grid-area: img2;
+  }
+  
+  .maincontent-images__img3 {
+    grid-area: img3;
+  }
+  
+  .maincontent-images__img4 {
+    grid-area: img4;
+  }
+  
+  .maincontent-images__img5 {
+    grid-area: img5;
+  }
+  
+  .maincontent-images__img1 {
+    grid-area: img1;
+    min-height: 15rem;
+    align-self: center;
+  }
+  
+  .maincontent-images__main {
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    & img {
+      width: 70%;
+      object-fit: fill;
+      height: 9rem;
+    }
+  }
+  .maincontent-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .maincontent-hotseller {
+  }
+  .maincontent-hotseller__title {
+    display: flex;
+    justify-content: space-between;
+    & h5 {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+  }
+  
+  
