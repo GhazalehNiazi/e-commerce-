@@ -249,16 +249,17 @@ img {
   background-color: #fe8f80;
   margin-left: 1rem;
   border-radius: 30px;
-  padding: 2rem 1rem;
+  padding: 1rem;
   color: #fcfcfc;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.4s ease-in;
 }
 
 .sideCart-cart__items {
   overflow-y: auto;
-  height: 56vh;
+  height: 50vh;
 }
 
 .sideCart-cart__item {
@@ -285,6 +286,7 @@ img {
 .sideCart-cart__item img {
   height: 4rem;
   object-fit: contain;
+  border-radius: 15px;
 }
 
 .sideCart-cart__details {
@@ -306,6 +308,21 @@ img {
 .sideCart-cart__details-item {
   display: flex;
   justify-content: space-between;
+}
+
+.sideCart-cartButton {
+  height: fit-content;
+  width: fit-content;
+  background-color: #fde8ea;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0;
+  margin-bottom: 0.3rem;
+  color: black;
+  padding: 0.1rem 0.7rem;
+  align-self: flex-end;
 }
 
 .landingpage-sidebar {
@@ -344,9 +361,15 @@ img {
   background: #fef0f0;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
-  background: linear-gradient(0deg, #fde8ea 0%, #fef8fc 66%, #fef8fc 100%);
+  background: linear-gradient(0deg, #fde8ea 0%, #fef8fc 66%, #fcfcfc 100%);
   -webkit-box-shadow: -2px 1px 23px 8px rgba(0, 0, 0, 0.1);
   box-shadow: -2px 1px 23px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in;
+}
+
+.full {
+  grid-template-columns: 2fr 0.01fr;
+  transition: all 0.4s ease-in;
 }
 
 .maincontent-title {
@@ -426,6 +449,16 @@ img {
 .maincontent-hotseller__title h5 {
   font-weight: 500;
   font-size: 1.1rem;
+}
+
+.maincontent-cartButton {
+  height: fit-content;
+  padding: 0.2rem 1rem;
+  background-color: #fde8ea;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

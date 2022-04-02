@@ -1,14 +1,19 @@
 import React from "react";
-import image from '../../assets/chair.jpg'
-function SideCart() {
+import image from "../../assets/chair.jpg";
+function SideCart(props) {
+  const onCloseButton = () => {
+      console.log('closed');
+      props.onClose();
+
+  };
   return (
     <div className="sideCart">
-      <div>top</div>
+      <button onClick={onCloseButton} className='sideCart-cartButton '>close</button>
       <div className="sideCart-cart__items">
         <div className="sideCart-cart__item">
-        <div>
-        <img src={image}/>
-        </div>  
+          <div>
+            <img src={image} />
+          </div>
           <div className="sideCart-cart__item-detail">
             <h5>classic chair</h5>
             <h4>$42</h4>
@@ -20,9 +25,9 @@ function SideCart() {
           </div>
         </div>
         <div className="sideCart-cart__item">
-        <div>
-        <img src={image}/>
-        </div> 
+          <div>
+            <img src={image} />
+          </div>
           <div className="sideCart-cart__item-detail">
             <h5>classic chair</h5>
             <h4>$42</h4>
@@ -34,9 +39,9 @@ function SideCart() {
           </div>
         </div>
         <div className="sideCart-cart__item">
-        <div>
-        <img src={image}/>
-        </div> 
+          <div>
+            <img src={image} />
+          </div>
           <div className="sideCart-cart__item-detail">
             <h5>classic chair</h5>
             <h4>$42</h4>
@@ -48,9 +53,9 @@ function SideCart() {
           </div>
         </div>
         <div className="sideCart-cart__item">
-        <div>
-        <img src={image}/>
-        </div> 
+          <div>
+            <img src={image} />
+          </div>
           <div className="sideCart-cart__item-detail">
             <h5>classic chair</h5>
             <h4>$42</h4>
