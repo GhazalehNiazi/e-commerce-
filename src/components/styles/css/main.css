@@ -16,10 +16,14 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
+html::selection, body::selection, div::selection, span::selection, object::selection, iframe::selection, figure::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, blockquote::selection, pre::selection, a::selection, code::selection, em::selection, img::selection, small::selection, strike::selection, strong::selection, sub::selection, sup::selection, tt::selection, b::selection, u::selection, i::selection, ol::selection, ul::selection, li::selection, fieldset::selection, form::selection, label::selection, table::selection, caption::selection, tbody::selection, tfoot::selection, thead::selection, tr::selection, th::selection, td::selection, main::selection, canvas::selection, embed::selection, footer::selection, header::selection, nav::selection, section::selection, video::selection {
+  background-color: #eba8c0;
+  color: white;
+}
 
 body {
   background: #fef0f0;
-  background: linear-gradient(30deg, #fdeaea 0%, #fcd0db 100%);
+  background: linear-gradient(30deg, #fdeaea 0%, #ffd1e2 100%);
 }
 
 input, button {
@@ -400,6 +404,7 @@ img {
   object-fit: fill;
   margin-bottom: 1rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .maincontent-images__img2 {
@@ -434,6 +439,7 @@ img {
   width: 70%;
   object-fit: fill;
   height: 9rem;
+  cursor: pointer;
 }
 
 .maincontent-content {

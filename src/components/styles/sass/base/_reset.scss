@@ -16,11 +16,14 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
     text-size-adjust: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    
+    &::selection{
+        background-color: rgb(235, 168, 192);
+        color: white;
+    }
 }
 body{
     background: rgb(254,240,240);
-    background: linear-gradient(30deg, rgb(253, 234, 234) 0%, rgb(252, 208, 219) 100%);
+    background: linear-gradient(30deg, rgb(253, 234, 234) 0%, rgb(255, 209, 226) 100%);
 }
 input,button{
     font-family: 'Poppins', sans-serif;

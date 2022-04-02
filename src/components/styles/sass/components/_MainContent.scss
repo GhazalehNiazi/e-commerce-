@@ -41,11 +41,13 @@
     "img1  img2 img3"
     "img1 img4 img5";
 
+
   & img {
     height: 7rem;
     object-fit: fill;
     margin-bottom: 1rem;
     padding: 0.5rem;
+    cursor: pointer;
   }
 }
 .maincontent-images__img2 {
@@ -79,6 +81,7 @@
     width: 70%;
     object-fit: fill;
     height: 9rem;
+    cursor: pointer;
   }
 }
 .maincontent-content {

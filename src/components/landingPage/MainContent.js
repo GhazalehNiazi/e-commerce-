@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import main from "../../assets/mainImage.jpg";
 import chair from "../../assets/chair.jpg";
 import lamp from "../../assets/lamp.jpg";
@@ -9,16 +9,17 @@ import SideCart from "./SideCart";
 
 function MainContent() {
   const [showCart, setShowCart] = useState(false);
-  const [showCartClassName , setShowCartClassName]= useState('full');
+  const [showCartClassName, setShowCartClassName] = useState("full");
 
   const cartCloseHandler = () => {
     setShowCart(false);
-    setShowCartClassName('full');
+    setShowCartClassName("full");
   };
-  const cartOpenHandler=()=>{
+  const cartOpenHandler = () => {
     setShowCart(true);
-    setShowCartClassName('');
-  }
+    setShowCartClassName("");
+  };
+
 
 
   return (
@@ -51,7 +52,11 @@ function MainContent() {
           <img />
         </div>
       </div>
-      {!showCart && <button className="maincontent-cartButton" onClick={cartOpenHandler}>cart</button>}
+      {!showCart && (
+        <button className="maincontent-cartButton" onClick={cartOpenHandler}>
+          cart
+        </button>
+      )}
       {showCart && <SideCart onClose={cartCloseHandler} />}
     </div>
   );
