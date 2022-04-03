@@ -1,41 +1,32 @@
 @use "../abstracts" as *;
-.header {
-  @include flex(column, center, center);
-  padding: 1rem;
-  padding-bottom: 3rem;
+.header{
+   
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgb(253, 244, 244) 0%,
+    rgb(255, 209, 226) 100%);
+    border-bottom: 1px solid rgba(182, 182, 182, 0.411);
+   &_logo{
+     width: 100%;
+    //  padding:0.6rem 5rem;
+     padding:1rem 0;
+     align-self:flex-start;
+   }
+     .header-items li{
+     cursor: pointer;
+    //  border-right: 1px solid rgba(153, 153, 153, 0.733);
+     
+   }
 }
+.header-items{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
-.header-row--one {
-  @include flex(row, space-between, center);
-  padding-bottom: 1rem;
-  & ul {
-    @include flex(row, space-between, center);
+  & li{
 
-    & li {
-      padding-right: 1rem;
-      color: white;
-    }
-  }
-  
-  & h3 {
-    color: white;
-    font-size: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-.header-row--two {
-  width: 100vw;
-  @include flex(row, center, center);
-  // justify-content: center;
-  // margin: auto;
-  & ul {
-    @include flex(row, space-between, center);
-    
-    & li {
-      margin-right: 1rem;
-      color: white;
-    //   font-size: rem;
-    }
+    padding:1rem 6.3rem;
   }
 }

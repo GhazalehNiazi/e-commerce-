@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+.shoppingMainContent {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  & h1 {
+    margin-bottom: 0.1rem;
+  }
+}
+.shoppingMainContent-container {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

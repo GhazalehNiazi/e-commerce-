@@ -1,0 +1,65 @@
+@use "../abstracts/" as *;
+.filterBar {
+    width: 100%;
+    border-right: 1px solid rgba(153, 153, 153, 0.733);
+  background: linear-gradient(
+    200deg,
+    rgb(253, 244, 244) 0%,
+    rgb(255, 209, 226) 100%
+  );
+  & div{
+    padding:  0.5rem;
+
+      margin-bottom: 1rem;
+    & h5{
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.filterBar-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  & div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+    & div {
+      margin-right: 0.5rem;
+      font-size: 0.9rem;
+      padding: 0.5rem 0.3rem;
+      background-color: rgb(255, 214, 234);
+    }
+}
+& input {
+    align-self: center;
+    height: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    width: 93%;
+    
+}
+}
+
+.filterBar-apply{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & h5{
+       
+    }
+    & button{
+        height: fit-content;
+        width: fit-content;
+        background-color: #fc7b6b;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        // margin-right:0.5rem ;
+        color: black;
+        padding: 0.4rem 2rem;
+        align-self: flex-end;
+    }
+}
