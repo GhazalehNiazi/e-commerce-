@@ -5,17 +5,21 @@ function Header() {
     <div className="header">
   
       <ul  className="header-items">
-        <li>
-          <a>current</a>
-        </li>
+
         <li>
           <a>catalog</a>
         </li>
         <li>
-          <a>brand</a>
+        <a>Wish List</a>
+        </li>
+        <li>
+        <input type="text" placeholder="search"/>
         </li>
         <li>
           <a>account</a>
+        </li>
+        <li>
+        <a>Cart</a>
         </li>
       </ul>
     </div>

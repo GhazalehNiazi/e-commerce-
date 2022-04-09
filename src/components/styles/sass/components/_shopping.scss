@@ -1,7 +1,13 @@
 .shopping{
-    background-color: white;
+    // background-color: white;
     min-height: 100vh;
     max-width: 100vw;
     display: grid;
-    grid-template-columns:1.5fr 3fr;
+    grid-template-columns:1fr 4.5fr;
+}
+.shopping-right{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    background: linear-gradient(200deg, #ffffff 0%, #ffffff 60%, #f7dee4 100%);
+    -webkit-box-shadow: -2px 1px 23px 8px rgba(0, 0, 0, 0.1);
 }

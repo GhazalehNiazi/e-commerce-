@@ -1,9 +1,11 @@
 @use "../abstracts/" as *;
 .shoppingMainContent {
-  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   & h1 {
+    padding: 0rem 3.5rem;
+    font-size: 0.8rem;
+    color: rgb(161, 159, 159);
     margin-bottom: 0.1rem;
   }
 }

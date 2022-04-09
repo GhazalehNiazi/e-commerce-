@@ -17,7 +17,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   font-style: normal;
 }
 html::selection, body::selection, div::selection, span::selection, object::selection, iframe::selection, figure::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, blockquote::selection, pre::selection, a::selection, code::selection, em::selection, img::selection, small::selection, strike::selection, strong::selection, sub::selection, sup::selection, tt::selection, b::selection, u::selection, i::selection, ol::selection, ul::selection, li::selection, fieldset::selection, form::selection, label::selection, table::selection, caption::selection, tbody::selection, tfoot::selection, thead::selection, tr::selection, th::selection, td::selection, main::selection, canvas::selection, embed::selection, footer::selection, header::selection, nav::selection, section::selection, video::selection {
-  background-color: #eba8c0;
+  background-color: #cee1fa;
   color: white;
 }
 
@@ -179,27 +179,35 @@ img {
 }
 
 .header {
+  padding: 1.2rem;
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(90deg, #fdf4f4 0%, #ffd1e2 100%);
-  border-bottom: 1px solid rgba(182, 182, 182, 0.411);
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .header_logo {
   width: 100%;
   padding: 1rem 0;
   align-self: flex-start;
 }
-.header .header-items li {
-  cursor: pointer;
+.header input {
+  margin-top: -1rem;
+  font-weight: normal;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 0.2rem 1.5rem;
 }
 
 .header-items {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 .header-items li {
-  padding: 1rem 6.3rem;
+  font-size: 0.9rem;
+  padding: 0.9rem 2.4rem;
+  padding-bottom: 0.1rem;
 }
 
 .landingpage {
@@ -442,36 +450,36 @@ img {
 }
 
 .shopping {
-  background-color: white;
   min-height: 100vh;
   max-width: 100vw;
   display: grid;
-  grid-template-columns: 1.5fr 3fr;
+  grid-template-columns: 1fr 4.5fr;
+}
+
+.shopping-right {
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  background: linear-gradient(200deg, #ffffff 0%, #ffffff 60%, #f7dee4 100%);
+  -webkit-box-shadow: -2px 1px 23px 8px rgba(0, 0, 0, 0.1);
 }
 
 .subHeader {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(153, 153, 153, 0.733);
-  background: linear-gradient(90deg, #fdf4f4 0%, #ffd1e2 100%);
-  border-bottom: 1px solid rgba(153, 153, 153, 0.733);
+  font-size: 0.9rem;
 }
 .subHeader div {
   padding: 0.2rem 10%;
   cursor: pointer;
 }
-
 .filterBar {
-  width: 100%;
-  border-right: 1px solid rgba(153, 153, 153, 0.733);
-  background: linear-gradient(200deg, #fdf4f4 0%, #ffd1e2 100%);
+  padding: 1rem;
 }
 .filterBar div {
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+  padding: 0.2rem 1rem;
+  margin: 1rem 0;
 }
 .filterBar div h5 {
-  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
@@ -482,14 +490,16 @@ img {
 }
 .filterBar-price div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 0.3rem;
 }
 .filterBar-price div div {
-  margin-right: 0.5rem;
-  font-size: 0.9rem;
-  padding: 0.5rem 0.3rem;
-  background-color: #ffd6ea;
+  width: max-content;
+  margin-right: 0.1rem;
+  font-size: 0.8rem;
+  padding: 0.7rem 0.1rem;
+  background-color: #fff4f9;
+  border-radius: 10px;
 }
 .filterBar-price input {
   align-self: center;
@@ -503,6 +513,9 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+.filterBar-apply h5 {
+  font-size: 0.8rem;
+}
 .filterBar-apply button {
   height: fit-content;
   width: fit-content;
@@ -512,16 +525,18 @@ img {
   font-size: 0.9rem;
   cursor: pointer;
   color: black;
-  padding: 0.4rem 2rem;
+  padding: 0.4rem 1.3rem;
   align-self: flex-end;
 }
 
 .shoppingMainContent {
-  padding: 0.5rem;
   display: flex;
   flex-direction: column;
 }
 .shoppingMainContent h1 {
+  padding: 0rem 3.5rem;
+  font-size: 0.8rem;
+  color: #a19f9f;
   margin-bottom: 0.1rem;
 }
 

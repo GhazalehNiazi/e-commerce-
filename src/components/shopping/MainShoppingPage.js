@@ -8,9 +8,9 @@ function MainShoppingPage() {
   return (
     <div className='shopping'>
     <FilterBar/>
-    <div>
+    <div className='shopping-right'>
     <Header/>
-    <SubHeader/>
+  {/*  <SubHeader/>*/}
     <Content/>
     </div>
     </div>

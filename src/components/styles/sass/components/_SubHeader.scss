@@ -3,15 +3,18 @@
 .subHeader {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(153, 153, 153, 0.733);
-  background: linear-gradient(
-    90deg,
-    rgb(253, 244, 244) 0%,
-    rgb(255, 209, 226) 100%);
-    border-bottom: 1px solid rgba(153, 153, 153, 0.733);
+  // border-bottom: 1px solid rgba(153, 153, 153, 0.733);
+  // background: linear-gradient(
+  //   90deg,
+  //   rgb(253, 244, 244) 0%,
+  //   rgb(255, 209, 226) 100%);
+  //   border-bottom: 1px solid rgba(153, 153, 153, 0.733);
+  font-size: 0.9rem;
   & div {
     padding: 0.2rem 10%;
     // border-right: 1px solid rgba(153, 153, 153, 0.733);
     cursor: pointer;
+    & li{
+    }
   }
 }
