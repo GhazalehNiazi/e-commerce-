@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.order{
+    background-color:rgb(249, 226, 237);
+    height: 100vh;
+}
+.mainContentOrder{
+    display: flex;
+    width: 100vw;
+    margin: 3rem 0;
+   
+}
+.ImageContainer{
+width: 210vw;
+background-color: black;
+margin-left: 3rem;
+}
+.details{
+    margin: 0 3rem;
+    width: 65%;
+    background-color: white;
+    padding: 3rem;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+font-size: 1.5rem;   
+border-radius:20px ; 
+height: 40rem;
+& button{
+    padding:1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color:white;
+    font-size: 1.2rem;
+}
+}

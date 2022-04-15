@@ -1,15 +1,16 @@
-@use "./abstracts" as *;
-@use "./base" as *;
+@import "./abstracts" ;
+@import "./base" ;
 
-@use './components/Register';
-@use './components/Button';
-@use './components/Header';
-@use './components/LandingPage';
-@use './components/SideCart';
-@use './components/SideBar';
-@use './components/MainContent';
-@use './components/shopping';
-@use './components/SubHeader';
-@use './components/FilterBar';
-@use './components/ShppingMainContent';
-@use './components/Item';
+// @import './components/Register';
+// @use './components/Button';
+@import './components/Header';
+// @use './components/LandingPage';
+// @use './components/SideCart';
+// @use './components/SideBar';
+// @use './components/MainContent';
+@import './components/shopping';
+@import './components/SubHeader';
+@import './components/FilterBar';
+@import './components/ShppingMainContent';
+@import './components/Item';
+@import './components/MainContentOrder'

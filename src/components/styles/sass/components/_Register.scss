@@ -1,36 +1,36 @@
 @use "../abstracts" as *;
 
 .register {
-  @include flex(column, center, center);
+  // @include flex(column, center, center);
   padding: 2rem 1rem;
-  @include mq($tablet) {
-    @include flex(row, space-between, baseline);
-  }
+  // @include mq($tablet) {
+    // @include flex(row, space-between, baseline);
+  // }
   //   height: max-content;
 }
 .imageContainer {
   width: 90vw;
   align-self: center;
   display: none;
-  @include mq($tablet) {
-    display: block;
-    width: 45vw;
-    padding-top:1rem;
-  }
+  // @include mq($tablet) {
+  //   display: block;
+  //   width: 45vw;
+  //   padding-top:1rem;
+  // }
   & img {
     width: 100%;
   }
 }
 
 .sign {
-  @include flex(column, center, center);
+  // @include flex(column, center, center);
   margin-top: 1.2rem;
-  @include mq($tablet) {
-    width: 50vw;
-    align-self: center;
-    justify-self: center;
-    padding-top:3rem;
-  }
+  // @include mq($tablet) {
+  //   width: 50vw;
+  //   align-self: center;
+  //   justify-self: center;
+  //   padding-top:3rem;
+  // }
   & input {
     border-radius: 5px;
     margin-bottom: 1rem;
