@@ -1,6 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal; }
+  html::selection, body::selection, div::selection, span::selection, object::selection, iframe::selection, figure::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, blockquote::selection, pre::selection, a::selection, code::selection, em::selection, img::selection, small::selection, strike::selection, strong::selection, sub::selection, sup::selection, tt::selection, b::selection, u::selection, i::selection, ol::selection, ul::selection, li::selection, fieldset::selection, form::selection, label::selection, table::selection, caption::selection, tbody::selection, tfoot::selection, thead::selection, tr::selection, th::selection, td::selection, main::selection, canvas::selection, embed::selection, footer::selection, header::selection, nav::selection, section::selection, video::selection {
+    background-color: #cee1fa;
+    color: white; }
+
+body {
+  background: #fef0f0;
+  background: linear-gradient(30deg, #fdeaea 0%, #ffd1e2 100%); }
+
+input, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; }
+
+footer, header, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+img {
+  width: 100%; }
+
 @forward './variables';
 @forward './mixins';
-@forward './reset';
+.register {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2rem 1rem;
+  background-color: white;
+  height: 100vh; }
+
+.imageContainer {
+  width: 90vw;
+  align-self: center;
+  display: block;
+  width: 45vw;
+  margin-top: -10rem; }
+  .imageContainer img {
+    width: 100%; }
+
+.sign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+  width: 50vw;
+  align-self: center;
+  justify-self: center;
+  padding-top: 3rem; }
+  .sign label {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem; }
+  .sign input {
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin-top: 0.3rem;
+    padding: 0.6rem 4.5rem;
+    font-size: 1rem; }
+    .sign input::placeholder {
+      color: #b1b1b1; }
+
+.alert {
+  border: 2px solid #d11515; }
+
+.checkbox {
+  border: 2px solid #2c2c2c;
+  cursor: pointer;
+  padding: 1rem !important; }
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline; }
+  .terms label {
+    font-size: 1rem;
+    margin-left: 0.4rem; }
+    .terms label span {
+      color: #0084FF;
+      font-weight: 600; }
+
+.changeMethod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 0.9rem; }
+
+.login {
+  color: #0084FF;
+  font-weight: 600;
+  cursor: pointer; }
+
+.button {
+  background-color: #0084FF;
+  padding: 1rem 8rem;
+  border: none;
+  margin: 1rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem; }
+
 @use "../abstracts" as *;
 .header {
   padding: 1.2rem;

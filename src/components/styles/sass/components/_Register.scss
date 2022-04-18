@@ -1,41 +1,45 @@
-@use "../abstracts" as *;
+@import "../abstracts" ;
 
 .register {
-  // @include flex(column, center, center);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
   padding: 2rem 1rem;
-  // @include mq($tablet) {
-    // @include flex(row, space-between, baseline);
-  // }
-  //   height: max-content;
+  background-color: white;
+  height: 100vh;
 }
 .imageContainer {
   width: 90vw;
   align-self: center;
-  display: none;
-  // @include mq($tablet) {
-  //   display: block;
-  //   width: 45vw;
-  //   padding-top:1rem;
-  // }
+  display: block;
+    width: 45vw;
+    margin-top: -10rem;
   & img {
     width: 100%;
   }
 }
 
 .sign {
-  // @include flex(column, center, center);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 1.2rem;
-  // @include mq($tablet) {
-  //   width: 50vw;
-  //   align-self: center;
-  //   justify-self: center;
-  //   padding-top:3rem;
-  // }
+    width: 50vw;
+    align-self: center;
+    justify-self: center;
+    padding-top:3rem;
+    & label{
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
   & input {
     border-radius: 5px;
     margin-bottom: 1rem;
     margin-top: 0.3rem;
-    padding: 0.3rem;
+    padding:0.6rem 4.5rem;
+    font-size: 1rem;
 
     &::placeholder {
       color: rgb(177, 177, 177);
@@ -47,14 +51,19 @@
 }
 .checkbox {
   border: 2px solid rgb(44, 44, 44);
-  border-radius: 0;
   cursor: pointer;
-  padding: 0;
+  padding: 1rem !important;
 }
+
 .terms {
-  @include flex(row, flex-start, baseline);
+  // @include flex(row, flex-start, baseline);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
   & label {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin-left:0.4rem ;
     & span {
       color: $blue;
       font-weight: 600;

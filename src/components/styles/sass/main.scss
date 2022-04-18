@@ -1,8 +1,10 @@
-@import "./abstracts" ;
-@import "./base" ;
+@import "./abstracts/mixins" ;
+@import "./abstracts/variables";
+@import "./base/reset" ;
 
-// @import './components/Register';
+@import './components/Register';
 // @use './components/Button';
+@import './components/Button';
 @import './components/Header';
 // @use './components/LandingPage';
 // @use './components/SideCart';
