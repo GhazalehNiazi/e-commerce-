@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import main from "../../assets/mainImage.jpg";
 import chair from "../../assets/chair.jpg";
 import lamp from "../../assets/lamp.jpg";
@@ -19,8 +19,6 @@ function MainContent() {
     setShowCart(true);
     setShowCartClassName("");
   };
-
-
 
   return (
     <div className={`maincontent ${showCartClassName}`}>
@@ -46,10 +44,13 @@ function MainContent() {
             <h5>Hot Seller</h5>
             <div>search</div>
           </div>
-          <img />
-          <img />
-          <img />
-          <img />
+          <div className="maincontent-subImages">
+            <img src={chair} />
+            <img src={chair} />
+            <img src={chair} />
+            <img src={chair} />
+            <img src={chair} />
+          </div>
         </div>
       </div>
       {!showCart && (

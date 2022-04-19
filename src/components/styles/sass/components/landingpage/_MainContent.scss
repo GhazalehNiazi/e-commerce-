@@ -1,15 +1,9 @@
-@use "../abstracts" as *;
+
 .maincontent {
   padding: 2rem;
   height: 100vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background: rgb(254, 240, 240);
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-  background: linear-gradient(0deg, #fde8ea 0%, #fef8fc 66%, #fcfcfc 100%);
-  -webkit-box-shadow: -2px 1px 23px 8px rgba(0, 0, 0, 0.1);
-  box-shadow: -2px 1px 23px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in;
 }
 
@@ -30,7 +24,6 @@
 .maincontent-images {
   width: fit-content;
   padding: 0 9rem;
-  display: grid;
   margin-bottom: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -41,9 +34,8 @@
     "img1  img2 img3"
     "img1 img4 img5";
 
-
   & img {
-    height: 7rem;
+    height: 10rem;
     object-fit: fill;
     margin-bottom: 1rem;
     padding: 0.5rem;
@@ -68,7 +60,7 @@
 
 .maincontent-images__img1 {
   grid-area: img1;
-  min-height: 15rem;
+  min-height: 20rem;
   align-self: center;
 }
 
@@ -78,7 +70,7 @@
   justify-content: center;
   width: 100%;
   & img {
-    width: 70%;
+    width: 73%;
     object-fit: fill;
     height: 9rem;
     cursor: pointer;
@@ -106,4 +98,13 @@
   border-radius: 10px;
   font-size: 0.9rem;
   cursor: pointer;
+}
+.maincontent-subImages{
+  display: flex;
+  width: fit-content;
+  & img{
+    height: 11rem;
+    object-fit: fill;
+    margin: 1rem;
+  }
 }
