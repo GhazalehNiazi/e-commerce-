@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Details() {
+function Details(props) {
   return (
     <div className='details'> 
     <div>
-    <div>name</div>
-    <div>price</div>
+    <div>{props.name}</div>
+    <div>{props.price}</div>
     </div>
 <div>
 <div>color</div>

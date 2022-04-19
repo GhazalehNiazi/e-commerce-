@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Image() {
+function Image(props) {
   return (
-    <div className='ImageContainer'>Image</div>
+    <div className='orderImageContainer'>
+    <img src={props.img}/>
+    </div>
   )
 }
 

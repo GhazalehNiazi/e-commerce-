@@ -471,7 +471,7 @@ img {
   padding: 0%; }
 
 .order {
-  background-color: #f9e2ed;
+  background-color: white;
   height: 100vh; }
 
 .mainContentOrder {
@@ -479,20 +479,26 @@ img {
   width: 100vw;
   margin: 3rem 0; }
 
-.ImageContainer {
-  width: 210vw;
-  background-color: black;
-  margin-left: 3rem; }
+.orderImageContainer {
+  margin-left: 3rem;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .orderImageContainer img {
+    width: 40vw;
+    object-fit: contain; }
 
 .details {
-  margin: 0 3rem;
-  width: 65%;
-  background-color: white;
-  padding: 3rem;
+  margin: 0 5rem;
+  width: 50vw;
+  background-color: #c94747;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border-radius: 20px;
   height: 40rem; }
   .details button {
