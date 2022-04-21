@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Item from "./Item";
 import itemsArray from "./itemsArray";
 import { sofa } from "../data/items";
 import { lamp } from "../data/items";
 import { desk } from "../data/items";
+import { useSelector } from "react-redux";
+
 function Items() {
-    console.log('hi');
+  console.log("hi");
 
-  const clickHandler = () => {
-    console.log('clicked');
-    
-  };
+  const products = useSelector((state) => state.allProducts.products.desk);
+  console.log(products);
+  
+  // const fetchProduct = async function () {
+  //   await products;
+  // };
+  // useEffect(() => {
+  //   fetchProduct()
+  // }, [])
+  
 
-  const items = desk.map((item) => (
+
+  const items = products?.map((item) => (
     <Item
       id={item.id}
       key={item.id}
