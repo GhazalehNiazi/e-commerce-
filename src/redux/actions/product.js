@@ -5,3 +5,9 @@ export const setProducts =(products)=>{
         payload:products
     }
 }
+export const addProduct =(product)=>{
+    return{
+        type:actionTypes.ADD_PRODUCT,
+        payload:product
+    }
+}
