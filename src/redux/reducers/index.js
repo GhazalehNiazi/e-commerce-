@@ -1,5 +1,5 @@
 import { combineReducers } from "@reduxjs/toolkit";
 import { productReducer } from "./productReducer";
-
-const reducers = combineReducers({allProducts: productReducer});
+import { cartReducer } from "./cartReducer";
+const reducers = combineReducers({allProducts: productReducer, cart:cartReducer});
 export default reducers;
