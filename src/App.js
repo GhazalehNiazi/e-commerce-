@@ -20,12 +20,13 @@ function App() {
   let selector = useSelector((state) => state);
 
   useEffect(() => {
-    dispatch({ type: actionTypes.SET_PRODUCT, desk });
-    dispatch({type:actionTypes.SET_PRODUCT , sofa}) //its overwriting the upper line 
-  }, [desk]);
+    dispatch({ type: actionTypes.SET_PRODUCT, payload:desk });
+    dispatch({type:actionTypes.SET_PRODUCT , payload:sofa}) //its overwriting the upper line 
+
+  }, []);
 
   useEffect(()=>{
-    dispatch({type: actionTypes.ADD_PRODUCT, desk})
+    dispatch({type: actionTypes.ADD_PRODUCT, payload:desk})
   },[])
   console.log(selector); // cart and products are being saved in the allProducts // should be allProducts and cart
 
