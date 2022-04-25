@@ -1,13 +1,14 @@
 import { actionTypes } from "../contacts/actionType";
 const initialState = {
-  products: [{}],
+  products: [],
 };
 
 export const productReducer = (state = initialState, action) => {
+  console.log('state: ', state );
+  console.log('action: ', action);
   switch (action.type) {
     case actionTypes.SET_PRODUCT: {
-      console.log(action.payload);
-      return {...state,  products: action.payload };
+      return { products: state.products.concat(action.payload) };
     }
     default:
       return state;
