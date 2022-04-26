@@ -1,5 +1,4 @@
 import React from "react";
-import Items from "./Items";
 import { useNavigate } from "react-router-dom";
 
 function Item(props) {

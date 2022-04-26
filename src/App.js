@@ -25,9 +25,9 @@ function App() {
 
   }, []);
 
-  useEffect(()=>{
-    dispatch({type: actionTypes.ADD_PRODUCT, payload:desk})
-  },[])
+  // useEffect(()=>{
+  //   dispatch({type: actionTypes.ADD_PRODUCT, payload:desk})
+  // },[])
   console.log(selector); // cart and products are being saved in the allProducts // should be allProducts and cart
 
   return (

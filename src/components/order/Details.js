@@ -1,23 +1,38 @@
-import React from 'react'
+import React from "react";
+import { useDispatch } from "react-redux";
+import { actionTypes } from "../../redux/contacts/actionType";
+import { useSelector } from "react-redux";
+function Details({ colors, name, price, size, product }) {
+  
+  const dispatch = useDispatch();
+  const selector = useSelector((state) => state);
 
-function Details(props) {
+  const clickHandler = () => {
+    dispatch({ type: actionTypes.ADD_PRODUCT, payload: product });
+    console.log(selector);
+  };
+
   return (
-    <div className='details'> 
-    <div>
-    <div>{props.name}</div>
-    <div>{props.price}</div>
+    <div className="details">
+      <div>
+        <div>{name}</div>
+        <div>{price}</div>
+      </div>
+      <div>
+        <div>color</div>
+        <div>
+          {colors.map((color) => (
+            <span>{color}</span>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div>size</div>
+        <div>{size}</div>
+      </div>
+      <button onClick={clickHandler}>Add To Bag</button>
     </div>
-<div>
-<div>color</div>
-<div>collorr</div>
-</div>
-<div>
-<div>size</div>
-<div>sizeeeee</div>
-</div>
-<button>Add To Bag</button>
-</div>
-  )
+  );
 }
 
-export default Details
+export default Details;

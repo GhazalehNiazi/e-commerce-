@@ -9,17 +9,9 @@ import { useSelector } from "react-redux";
 function Items() {
   console.log("hi");
 
-  const products = useSelector((state) => state.allProducts.products.desk);
+  const products = useSelector((state) => state.allProducts.products);
   console.log(products);
   
-  // const fetchProduct = async function () {
-  //   await products;
-  // };
-  // useEffect(() => {
-  //   fetchProduct()
-  // }, [])
-  
-
 
   const items = products?.map((item) => (
     <Item

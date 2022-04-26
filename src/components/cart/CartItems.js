@@ -1,22 +1,22 @@
-import React from 'react'
-import CartItem from './CartItem'
-
+import React from "react";
+import CartItem from "./CartItem";
+import { useSelector } from "react-redux";
 function CartItems() {
-  return (
-    <div className='cartItems'>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
-    <CartItem name='name' price='12$' number='2' stock='stock'/>
+  const selector = useSelector((state) => state.cart.cart);
+  console.log(selector);
 
+  return (
+    <div className="cartItems">
+      {selector.map((item) => (
+        <CartItem
+          name={item.name}
+          price={item.price}
+          number={item.number}
+          stock={item.stock}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default CartItems
+export default CartItems;
