@@ -3,23 +3,24 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-  
-      <ul  className="header-items">
-
+      <ul className="header-items">
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
         <li>
           <a>catalog</a>
         </li>
         <li>
-        <a>Wish List</a>
+          <a>Wish List</a>
         </li>
         <li>
-        <input type="text" placeholder="search"/>
+          <input type="text" placeholder="search" />
         </li>
         <li>
           <a>account</a>
         </li>
         <li>
-        <Link to='/cart'>Cart</Link>
+          <Link to="/cart">Cart</Link>
         </li>
       </ul>
     </div>

@@ -15,11 +15,11 @@ function MainContent() {
 
   const chairArray = [chair, chair, chair, chair];
   const mainArray = [
-    { src: chair, className: "maincontent-images__img1" },
-    { src: lamp, className: "maincontent-images__img2" },
-    { src: amchair, className: "maincontent-images__img3" },
-    { src: table, className: "maincontent-images__img4" },
-    { src: sofa, className: "maincontent-images__img5" },
+    { src: chair, className: "maincontent-images__img1", category:'chair'},
+    { src: lamp, className: "maincontent-images__img2" , category:'lamp'},
+    { src: amchair, className: "maincontent-images__img3", category:'ampchair' },
+    { src: table, className: "maincontent-images__img4", category:'desk' },
+    { src: sofa, className: "maincontent-images__img5" , category:'sofa'},
   ];
 
   const cartCloseHandler = () => {

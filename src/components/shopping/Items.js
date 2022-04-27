@@ -1,19 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Item from "./Item";
-import itemsArray from "./itemsArray";
-import { sofa } from "../data/items";
-import { lamp } from "../data/items";
-import { desk } from "../data/items";
 import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 
 function Items() {
-  console.log("hi");
+
+  const param = useParams();
+  const category = param.category;
+  console.log(category);
 
   const products = useSelector((state) => state.allProducts.products);
-  console.log(products);
-  
 
-  const items = products?.map((item) => (
+  const selectedProduct = products.filter((item) => item.genre == category);
+  console.log(selectedProduct);
+
+  const items = selectedProduct?.map((item) => (
     <Item
       id={item.id}
       key={item.id}

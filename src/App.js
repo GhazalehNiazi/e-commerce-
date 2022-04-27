@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useDispatch , useSelector} from "react-redux";
 
 import Register from "./components/register/Register";
@@ -21,21 +21,19 @@ function App() {
 
   useEffect(() => {
     dispatch({ type: actionTypes.SET_PRODUCT, payload:desk });
-    dispatch({type:actionTypes.SET_PRODUCT , payload:sofa}) //its overwriting the upper line 
+    dispatch({type:actionTypes.SET_PRODUCT , payload:sofa}) 
 
   }, []);
 
-  // useEffect(()=>{
-  //   dispatch({type: actionTypes.ADD_PRODUCT, payload:desk})
-  // },[])
-  console.log(selector); // cart and products are being saved in the allProducts // should be allProducts and cart
+
+  console.log(selector); 
 
   return (
     <div className="">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="register" element={<Register />} />
-        <Route path="shopping" element={<MainShoppingPage />} />
+        <Route path="shopping/:category" element={<MainShoppingPage />} />
         <Route path="order/:productId" element={<Order />} />
         <Route path="cart" element={<Cart />} />
       </Routes>

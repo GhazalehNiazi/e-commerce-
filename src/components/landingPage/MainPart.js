@@ -1,6 +1,7 @@
 import React from "react";
+import Image from "./Image";
 
-function MainPart({ title, subTitle, mainItem , className, items }) {
+function MainPart({ title, subTitle, mainItem, className, items }) {
   return (
     <>
       <div className={`${className}-title`}>
@@ -10,13 +11,13 @@ function MainPart({ title, subTitle, mainItem , className, items }) {
 
       <div className={`${className}-content`}>
         <div className={`${className}-images__main`}>
-        <img src={mainItem}/>
+          <img src={mainItem} />
         </div>
-      <div className={`${className}-images`}>
-      {items.map((item) => (
-          <img src={item.src} className={item.className} />
+        <div className={`${className}-images`}>
+          {items.map((item) => (
+            <Image src={item.src} className={item.className} category={item.category}/>
           ))}
-          </div>
+        </div>
       </div>
     </>
   );

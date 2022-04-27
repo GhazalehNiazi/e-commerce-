@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function CartDetails({ className, details }) {
   return (
     <div className={className}>
@@ -10,7 +10,7 @@ function CartDetails({ className, details }) {
             <div>${item[1]}</div>
           </div>
         ))}
-        <button>checkout</button>
+        <button><Link to='/cart'>checkout</Link></button>
       </div>
     </div>
   );
