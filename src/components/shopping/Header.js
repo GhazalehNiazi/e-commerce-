@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
@@ -19,7 +19,7 @@ function Header() {
           <a>account</a>
         </li>
         <li>
-        <a>Cart</a>
+        <Link to='/cart'>Cart</Link>
         </li>
       </ul>
     </div>

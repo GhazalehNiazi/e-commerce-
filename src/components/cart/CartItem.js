@@ -3,14 +3,19 @@ import React from "react";
 function CartItem(props) {
   return (
     <div className="cartItem">
-      <div className="cartItem-image">img</div>
+      <div className="cartItem-image">
+        <img src={props.img} />
+      </div>
 
       <div className="cartItem-info">
         <div className="cartItem-info_columnOne">
           <div>
             <h1>{props.name}</h1>
             <h4>
-              {props.price} | <span className="cartItem-info_columnOne_stock">{props.stock}</span>
+              {props.price} |{" "}
+              <span className="cartItem-info_columnOne_stock">
+                {props.stock}
+              </span>
             </h4>
           </div>
           <div>

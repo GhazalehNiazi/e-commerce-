@@ -9,6 +9,7 @@ function CartItems() {
     <div className="cartItems">
       {selector.map((item) => (
         <CartItem
+          img={item.img}
           name={item.name}
           price={item.price}
           number={item.number}
