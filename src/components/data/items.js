@@ -1,5 +1,6 @@
 export const sofa = [
   {
+    id:10,
     name: "Londra Sofa",
     genre: "sofa",
     available: 1,
@@ -11,6 +12,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/b13887a65893c2a9259f675bee7a4b5e_large.jpg?v=1643012439",
   },
   {
+    id:12,
     name: "Suzanna Sofa",
     genre: "sofa",
     available: 1,
@@ -22,6 +24,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/ce3cffab64ca67d86d5150d94514e9a4_large.jpg?v=1646045647",
   },
   {
+    id:12,
     name: "Suzanna Sofa",
     genre: "sofa",
     available: 1,
@@ -33,6 +36,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/ce3cffab64ca67d86d5150d94514e9a4_large.jpg?v=1646045647",
   },
   {
+    id:13,
     name: "Taylor Sofa",
     genre: "sofa",
     available: 1,
@@ -44,6 +48,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/62f178ad21273a674f7303d9a5e35903_large.jpg?v=1632281685",
   },
   {
+    id:14,
     name: "Milton Zi Sofa",
     genre: "sofa",
     available: 1,
@@ -55,6 +60,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/c6880c62faa03b6bc792af9717717d4e_large.jpg?v=1643015446",
   },
   {
+    id:15,
     name: "Londra Sofa",
     genre: "sofa",
     available: 1,
@@ -66,6 +72,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/b13887a65893c2a9259f675bee7a4b5e_large.jpg?v=1643012439",
   },
   {
+    id:16,
     name: "Suzanna Sofa",
     genre: "sofa",
     available: 1,
@@ -77,6 +84,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/ce3cffab64ca67d86d5150d94514e9a4_large.jpg?v=1646045647",
   },
   {
+    id:17,
     name: "Suzanna Sofa",
     genre: "sofa",
     available: 1,
@@ -88,6 +96,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/ce3cffab64ca67d86d5150d94514e9a4_large.jpg?v=1646045647",
   },
   {
+    id:18,
     name: "Taylor Sofa",
     genre: "sofa",
     available: 1,
@@ -99,6 +108,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/62f178ad21273a674f7303d9a5e35903_large.jpg?v=1632281685",
   },
   {
+    id:19,
     name: "Milton Zi Sofa",
     genre: "sofa",
     available: 1,
@@ -110,6 +120,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/c6880c62faa03b6bc792af9717717d4e_large.jpg?v=1643015446",
   },
   {
+    id:20,
     name: "Londra Sofa",
     genre: "sofa",
     available: 1,
@@ -121,6 +132,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/b13887a65893c2a9259f675bee7a4b5e_large.jpg?v=1643012439",
   },
   {
+    id:21,
     name: "Suzanna Sofa",
     genre: "sofa",
     available: 1,
@@ -132,6 +144,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/ce3cffab64ca67d86d5150d94514e9a4_large.jpg?v=1646045647",
   },
   {
+    id:22,
     name: "Suzanna Sofa",
     genre: "sofa",
     available: 1,
@@ -143,6 +156,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/ce3cffab64ca67d86d5150d94514e9a4_large.jpg?v=1646045647",
   },
   {
+    id:23,
     name: "Taylor Sofa",
     genre: "sofa",
     available: 1,
@@ -154,6 +168,7 @@ export const sofa = [
     img: "https://cdn.shopify.com/s/files/1/0004/4630/0222/products/62f178ad21273a674f7303d9a5e35903_large.jpg?v=1632281685",
   },
   {
+    id:24,
     name: "Milton Zi Sofa",genre: "sofa",
     available: 1,
     stock: "stock",

@@ -471,7 +471,7 @@ img {
   padding: 0%; }
 
 .order {
-  background-color: white;
+  background: linear-gradient(10deg, #ffedf4 0%, snow 100%);
   height: 100vh; }
 
 .mainContentOrder {
@@ -493,7 +493,8 @@ img {
 .details {
   margin: 0 5rem;
   width: 50vw;
-  background-color: #c94747;
+  color: white;
+  background-color: #fc7b6b;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -505,9 +506,37 @@ img {
     padding: 1rem;
     border: none;
     border-radius: 10px;
-    background-color: black;
+    background-color: #fe8f80;
     color: white;
     font-size: 1.2rem; }
+    .details button:hover {
+      background-color: #ff5537;
+      color: black; }
+
+.details-color {
+  padding: 0.3rem 1rem;
+  margin: 1rem 1rem;
+  border: 1px solid #413a3a;
+  margin-left: 0; }
+
+.detail-color_container {
+  margin: 1rem;
+  margin-left: 0;
+  height: max-content; }
+
+.detail-size {
+  margin: 1rem 0;
+  display: flex; }
+  .detail-size span {
+    border: 2px solid rgba(255, 203, 188, 0.675);
+    padding: 0.8rem 2.8rem; }
+    .detail-size span:hover {
+      background-color: #ff5537;
+      color: black; }
+
+.selected {
+  background-color: #ff5537;
+  color: black; }
 
 .cart {
   display: flex;
