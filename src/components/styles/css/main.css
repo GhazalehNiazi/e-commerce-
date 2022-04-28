@@ -164,9 +164,14 @@ img {
   justify-content: space-between;
   width: 100%; }
   .header-items li {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 500;
     padding: 0.9rem 2.4rem;
     padding-bottom: 0.1rem; }
+    .header-items li a {
+      transition: color ease-in 0.1s; }
+    .header-items li a:hover {
+      color: #fc7b6b; }
 
 .landingpage {
   width: 100vw;
@@ -471,7 +476,7 @@ img {
   padding: 0%; }
 
 .order {
-  background: linear-gradient(10deg, #ffedf4 0%, snow 100%);
+  background: linear-gradient(100deg, #fff2f6 0%, snow 100%);
   height: 100vh; }
 
 .mainContentOrder {
@@ -511,7 +516,7 @@ img {
     font-size: 1.2rem; }
     .details button:hover {
       background-color: #ff5537;
-      color: black; }
+      color: #f9f9f9; }
 
 .details-color {
   padding: 0.3rem 1rem;
@@ -520,7 +525,7 @@ img {
   margin-left: 0; }
 
 .detail-color_container {
-  margin: 1rem;
+  margin: 2rem;
   margin-left: 0;
   height: max-content; }
 
@@ -532,11 +537,20 @@ img {
     padding: 0.8rem 2.8rem; }
     .detail-size span:hover {
       background-color: #ff5537;
-      color: black; }
+      color: white; }
 
 .selected {
   background-color: #ff5537;
-  color: black; }
+  color: white; }
+
+.details-firstSection div {
+  margin: 1rem 0; }
+
+.details-name {
+  font-size: 2rem; }
+
+.details-title {
+  font-size: 1.5rem; }
 
 .cart {
   display: flex;

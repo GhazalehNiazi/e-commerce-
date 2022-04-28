@@ -36,6 +36,7 @@ function App() {
         <Route path="shopping/:category" element={<MainShoppingPage />} />
         <Route path="order/:productId" element={<Order />} />
         <Route path="cart" element={<Cart />} />
+        <Route path='account' element={<Register/>}/>
       </Routes>
     </div>
   );

@@ -27,8 +27,16 @@
   justify-content: space-between;
   width: 100%;
   & li {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 500;
     padding: 0.9rem 2.4rem;
     padding-bottom: 0.1rem;
+    &  a{
+      transition:color ease-in 0.1s;
+    }
+    & a:hover{
+      color: #fc7b6b;
+      
+    }
   }
 }

@@ -19,17 +19,17 @@ function Details({ colors, name, price, size, product }) {
 
   return (
     <div className="details">
-      <div>
-        <div>{name}</div>
-        <div>{price}</div>
+      <div className="details-firstSection">
+        <div className="details-name">{name}</div>
+        <div className="details-price">${price}</div>
       </div>
       <div>
-        <div>color</div>
+        <div className="details-title">color</div>
         <Color colors={colors}/>
         
       </div>
       <div>
-        <div>size</div>
+        <div className="details-title">size</div>
         <Size className='detail-size' sizes={size}/>
         
       </div>

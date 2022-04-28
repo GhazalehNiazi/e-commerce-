@@ -17,7 +17,7 @@ function Header() {
           <input type="text" placeholder="search" />
         </li>
         <li>
-          <a>account</a>
+          <Link to='/account'>account</Link>
         </li>
         <li>
           <Link to="/cart">Cart</Link>
