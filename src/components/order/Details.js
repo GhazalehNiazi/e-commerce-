@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { actionTypes } from "../../redux/contacts/actionType";
 import { useSelector } from "react-redux";
@@ -28,11 +28,11 @@ function Details({ colors, name, price, size, product }) {
         <Color colors={colors}/>
         
       </div>
-      <div>
+      {size && <div>
         <div className="details-title">size</div>
         <Size className='detail-size' sizes={size}/>
         
-      </div>
+      </div>}
       <button onClick={clickHandler} >Add To Bag</button>
     </div>
   );
