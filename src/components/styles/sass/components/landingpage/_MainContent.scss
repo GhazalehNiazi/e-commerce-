@@ -5,12 +5,17 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   transition: all 0.4s ease-in;
-  @media (max-width: 375px) {
+  @media (max-width: 600px) {
     padding: 1rem 1rem;
     display: flex;
     flex-direction: column;
     height: max-content;
     // flex-direction: column-reverse; //==========
+  }
+  @media (max-width: 1000px) {
+    padding: 1rem 1rem;
+    width: 100%;
+    height: max-content;
   }
 }
 
@@ -24,13 +29,13 @@
   & h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
       font-size: 2rem;
     }
   }
   & h5 {
     color: rgb(121, 121, 121);
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
       margin-bottom: 2rem;
     }
   }
@@ -47,12 +52,15 @@
   grid-template-areas:
     "img1  img2 img3"
     "img1 img4 img5";
-  @media (max-width: 375px) {
+  @media (max-width: 600px) {
     display: flex;
-
     padding: 0%;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  @media (max-width: 1000px) {
+    width:100%;
+    padding: 1rem;
   }
   & img {
     height: 10rem;
@@ -60,7 +68,7 @@
     margin-bottom: 1rem;
     padding: 0.5rem;
     cursor: pointer;
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
       height: 8rem;
       width: auto;
       padding: 0;
@@ -88,10 +96,9 @@
   grid-area: img1;
   min-height: 20rem;
   align-self: center;
-  @media (max-width: 375px) {
+  @media (max-width: 600px) {
     min-height: 16rem;
   }
-
 }
 
 .maincontent-images__main {
@@ -99,7 +106,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  @media (max-width: 375px) {
+  @media (max-width: 600px) {
     margin-bottom: 1rem;
   }
   & img {
@@ -107,9 +114,13 @@
     object-fit: fill;
     height: 9rem;
     cursor: pointer;
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
       width: 100%;
       margin-bottom: 1rem;
+    }
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin:1rem 0;
     }
   }
 }
@@ -122,15 +133,13 @@
 .maincontent-hotseller__title {
   display: flex;
   justify-content: space-between;
-  @media (max-width: 375px) {
+  @media (max-width: 600px) {
     margin: 1rem 0;
   }
   & h5 {
     font-weight: 500;
     font-size: 1.1rem;
-   
   }
-
 }
 .maincontent-cartButton {
   height: fit-content;
@@ -145,18 +154,27 @@
 .maincontent-subImages {
   display: flex;
   width: fit-content;
-  
-  @media (max-width: 375px) {
+
+  @media (max-width: 600px) {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (max-width:1000px){
+    flex-wrap: wrap;
+    justify-content: center;
   }
   & img {
     height: 11rem;
     object-fit: fill;
     margin: 1rem;
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
       height: 10rem;
       width: auto;
       margin: 0.2rem;
+    }
+    @media (max-width:1000px){
+      height: 12rem;
+      width: auto;
     }
   }
 }
