@@ -8,9 +8,22 @@
     color: rgb(161, 159, 159);
     margin-bottom: 0.1rem;
   }
+  @media (max-width:600px){
+    width:100%;
+  }
+  @media(max-width:1000px){
+    width: 100%;
+  }
 }
 .shoppingMainContent-container {
   align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
+  @media (max-width:600px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media(max-width:1000px){
+    grid-template-columns: repeat(2, 1fr);
+   }
+  
 }

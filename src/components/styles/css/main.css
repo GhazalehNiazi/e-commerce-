@@ -147,6 +147,13 @@ img {
   justify-content: space-between;
   padding-bottom: 0;
   margin-bottom: 0; }
+  @media (max-width: 600px) {
+    .header {
+      flex-wrap: wrap;
+      visibility: hidden;
+      max-width: min-content;
+      background-color: #fc7b6b;
+      border: 3px solid black; } }
   .header_logo {
     width: 100%;
     padding: 1rem 0;
@@ -157,6 +164,9 @@ img {
     border-radius: 10px;
     border: 1px solid gray;
     padding: 0.2rem 1.5rem; }
+    @media (max-width: 1000px) {
+      .header input {
+        padding: 0.2rem 0.6rem; } }
 
 .header-items {
   cursor: pointer;
@@ -168,6 +178,11 @@ img {
     font-weight: 500;
     padding: 0.9rem 2.4rem;
     padding-bottom: 0.1rem; }
+    @media (max-width: 1000px) {
+      .header-items li {
+        padding: 0.2rem;
+        font-weight: 300;
+        font-size: 1rem; } }
     .header-items li a {
       transition: color ease-in 0.1s; }
     .header-items li a:hover {
@@ -458,6 +473,14 @@ img {
   max-width: 100vw;
   display: grid;
   grid-template-columns: 1fr 4.5fr; }
+  @media (max-width: 600px) {
+    .shopping {
+      display: block;
+      overflow-x: hidden; } }
+  @media (max-width: 1000px) {
+    .shopping {
+      width: 100vw;
+      height: fit-content; } }
 
 .right {
   margin: 0;
@@ -486,6 +509,10 @@ img {
     margin: 1rem 0; }
     .filterBar div h5 {
       margin-bottom: 0.5rem; }
+      @media (max-width: 1000px) {
+        .filterBar div h5 {
+          font-size: 1.2rem;
+          padding: 1rem 0rem; } }
 
 .filterBar-price {
   display: flex;
@@ -525,6 +552,9 @@ img {
     color: black;
     padding: 0.4rem 1.3rem;
     align-self: flex-end; }
+    @media (max-width: 1000px) {
+      .filterBar-apply button {
+        font-size: 1.2rem; } }
 
 @use "../abstracts/" as *;
 .shoppingMainContent {
@@ -535,11 +565,23 @@ img {
     font-size: 0.8rem;
     color: #a19f9f;
     margin-bottom: 0.1rem; }
+  @media (max-width: 600px) {
+    .shoppingMainContent {
+      width: 100%; } }
+  @media (max-width: 1000px) {
+    .shoppingMainContent {
+      width: 100%; } }
 
 .shoppingMainContent-container {
   align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
+  @media (max-width: 600px) {
+    .shoppingMainContent-container {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 1000px) {
+    .shoppingMainContent-container {
+      grid-template-columns: repeat(2, 1fr); } }
 
 .item {
   margin: 0rem 1rem;
@@ -548,6 +590,9 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  @media (max-width: 1000px) {
+    .item {
+      font-size: 1.2rem; } }
 
 .item-img {
   width: 100%;
