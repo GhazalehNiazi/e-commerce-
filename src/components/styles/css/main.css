@@ -710,10 +710,10 @@ img {
 
 .cart {
   display: flex;
-  background-color: white;
+  background-color: transparent;
   width: 100vw;
   padding: 3rem;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .cartItems {
   background-color: transparent;
@@ -748,7 +748,7 @@ img {
     width: 6rem; }
 
 .cartPayment {
-  background-color: #ed397e;
+  background-color: #f77261;
   width: 100%;
   margin: 0 3rem;
   border-radius: 20px;
@@ -814,6 +814,9 @@ img {
     font-size: 1rem;
     cursor: pointer; }
     .cartpayment-columnFour button:hover {
-      background-color: #f0bdd3; }
+      background-color: #f9b8a3; }
+
+.cartItem-image {
+  margin-right: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
