@@ -4,10 +4,24 @@
   width: 100vw;
   padding: 3rem;
   min-height:100vh;
+  @media (max-width:1000px) {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  @media (max-width:1000px) {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
 }
 .cartItems {
   background-color: transparent;
   width: 210vw;
+  @media (max-width:1000px) {
+    width: 100vw;
+  }
+  @media (max-width:1000px) {
+    width: 100vw;
+  }
 
 
 }
@@ -17,6 +31,10 @@
     justify-content: space-between;
     padding:1rem 2rem;
     border-bottom: 1.5px solid rgba(110, 109, 109, 0.848);
+    @media (max-width:600px) {
+      padding: 1rem;
+    }
+
 
 }
 .cartItem-info_columnOne{
@@ -25,20 +43,32 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  @media (max-width:1000px) {
+    width: 100%;
+    flex-direction: column;
+  }
   & div h1{
     padding-bottom: 1rem;
+    @media (max-width:1000px) {
+      font-size: 1.3rem;
+    }
   }
   &_stock{
     color: rgb(118, 194, 127);
   }
 }
+
 .cartItem-info_columnTwo{
-  
+
   width: 40rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   padding-top:1rem;
+  @media (max-width:1000px) {
+    width: 100%;
+    flex-direction: column;
+  }
   &_options{
     display: flex;
     justify-content: space-between;
@@ -54,13 +84,17 @@
   height: fit-content;
   color:white;
   position:sticky;
+  @media (max-width:1000px) {
+    margin: 0;
+    position: relative;
+    width: 100vw;
+  }
 }
 .cartpayment-column{
   display: flex;
   padding: 1rem;
 }
 .cartpayment-columnOne{
-  
   display: flex;
   flex-direction: column;
   &_columnOne{
@@ -70,7 +104,6 @@
     border-radius: 10px;
     padding: 0.6rem ;
     margin:0.3rem;
-
     & div{
       padding: 0.5rem;
     }
@@ -83,6 +116,9 @@
     border:none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    @media (max-width:1000px) {
+      width: 100%;
+    }
   }
 
   & button{
@@ -134,4 +170,8 @@
 }
 .cartItem-image{
   margin-right: 2rem;
+  @media (max-width:1000px) {
+    width: 10rem;
+    margin: 0;
+  }
 }

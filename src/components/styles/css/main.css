@@ -714,10 +714,24 @@ img {
   width: 100vw;
   padding: 3rem;
   min-height: 100vh; }
+  @media (max-width: 1000px) {
+    .cart {
+      flex-direction: column;
+      padding: 1rem 2rem; } }
+  @media (max-width: 1000px) {
+    .cart {
+      flex-direction: column;
+      padding: 1rem 2rem; } }
 
 .cartItems {
   background-color: transparent;
   width: 210vw; }
+  @media (max-width: 1000px) {
+    .cartItems {
+      width: 100vw; } }
+  @media (max-width: 1000px) {
+    .cartItems {
+      width: 100vw; } }
 
 .cartItem {
   margin: 2rem 0;
@@ -725,14 +739,24 @@ img {
   justify-content: space-between;
   padding: 1rem 2rem;
   border-bottom: 1.5px solid rgba(110, 109, 109, 0.848); }
+  @media (max-width: 600px) {
+    .cartItem {
+      padding: 1rem; } }
 
 .cartItem-info_columnOne {
   width: 40rem;
   display: flex;
   align-items: baseline;
   justify-content: space-between; }
+  @media (max-width: 1000px) {
+    .cartItem-info_columnOne {
+      width: 100%;
+      flex-direction: column; } }
   .cartItem-info_columnOne div h1 {
     padding-bottom: 1rem; }
+    @media (max-width: 1000px) {
+      .cartItem-info_columnOne div h1 {
+        font-size: 1.3rem; } }
   .cartItem-info_columnOne_stock {
     color: #76c27f; }
 
@@ -742,6 +766,10 @@ img {
   align-items: baseline;
   justify-content: space-between;
   padding-top: 1rem; }
+  @media (max-width: 1000px) {
+    .cartItem-info_columnTwo {
+      width: 100%;
+      flex-direction: column; } }
   .cartItem-info_columnTwo_options {
     display: flex;
     justify-content: space-between;
@@ -756,6 +784,11 @@ img {
   height: fit-content;
   color: white;
   position: sticky; }
+  @media (max-width: 1000px) {
+    .cartPayment {
+      margin: 0;
+      position: relative;
+      width: 100vw; } }
 
 .cartpayment-column {
   display: flex;
@@ -779,6 +812,9 @@ img {
   border: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px; }
+  @media (max-width: 1000px) {
+    .cartpayment-columnTwo input {
+      width: 100%; } }
 .cartpayment-columnTwo button {
   border: rgba(0, 0, 0, 0.644) solid 1px;
   background-color: white;
@@ -818,5 +854,9 @@ img {
 
 .cartItem-image {
   margin-right: 2rem; }
+  @media (max-width: 1000px) {
+    .cartItem-image {
+      width: 10rem;
+      margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
