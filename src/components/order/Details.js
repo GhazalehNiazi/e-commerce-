@@ -4,14 +4,15 @@ import { actionTypes } from "../../redux/contacts/actionType";
 import { useSelector } from "react-redux";
 import Color from "./Color";
 import Size from "./Size";
-function Details({ colors, name, price, size, product }) {
+function Details({ colors, name, price, size, product ,SetAddedToCart,AddedToCart}) {
 
   const dispatch = useDispatch();
   const selector = useSelector((state) => state);
-
+  
 
   const clickHandler = () => {
     dispatch({ type: actionTypes.ADD_PRODUCT, payload: product });
+    SetAddedToCart(true);
     console.log(selector);
 
   };

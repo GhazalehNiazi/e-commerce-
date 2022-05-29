@@ -708,6 +708,15 @@ img {
 .details-title {
   font-size: 1.5rem; }
 
+.addedToCart {
+  float: right;
+  padding: 1rem 6rem;
+  background-color: #1eab7c;
+  color: white;
+  margin-top: -2rem;
+  margin-right: 9rem;
+  border-radius: 20px; }
+
 .cart {
   display: flex;
   background-color: transparent;
